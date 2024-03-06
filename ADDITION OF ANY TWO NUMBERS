@@ -1,0 +1,21 @@
+set serveroutput on;
+SQL> Declare
+  2     Var1 integer;
+  3     Var2 integer;
+  4     Var3 integer;
+  5     Begin
+  6     Var1:=&var1;
+  7     Var2:=&var2;
+  8     Var3:=var1+var2;
+  9     Dbms_output.put_line(var3);
+ 10    End;
+ 11     /
+Enter value for var1: 5
+old   6:    Var1:=&var1;
+new   6:    Var1:=5;
+Enter value for var2: 4
+old   7:    Var2:=&var2;
+new   7:    Var2:=4;
+9
+
+PL/SQL procedure successfully completed.
