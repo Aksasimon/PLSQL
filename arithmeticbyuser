@@ -1,0 +1,30 @@
+set serveroutput on;
+SQL> declare
+  2    num1 number;
+  3    num2 number;
+  4    num3 number;
+  5    begin
+  6    num1:=&num1;
+  7    num2:=&num2;
+  8    num3:=num1+num2;
+  9    dbms_output.put_line('The sum of  '||num1||'  and  '||num2||'  is  '||num3);
+ 10   num3:=num1-num2;
+ 11    dbms_output.put_line('The subtraction of  '||num1||'  and  '||num2||'  is '||num3);
+ 12    num3:=num1*num2;
+ 13    dbms_output.put_line('The multiplication of  '||num1||'  and  '||num2||'is  '||num3);
+ 14    num3:=num1/num2;
+ 15    dbms_output.put_line('The division of  '||num1||'  and  '||num2||'  is  '||num3);
+ 16    end;
+ 17    /
+Enter value for num1: 4
+old   6:   num1:=&num1;
+new   6:   num1:=4;
+Enter value for num2: 5
+old   7:   num2:=&num2;
+new   7:   num2:=5;
+The sum of  4  and  5  is  9
+The subtraction of  4  and  5  is -1
+The multiplication of  4  and  5is  20
+The division of  4  and  5  is  .8
+
+PL/SQL procedure successfully completed.
