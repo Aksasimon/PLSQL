@@ -1,0 +1,32 @@
+set serveroutput on;
+SQL>  declare
+  2   x number;
+  3   y number;
+  4    z number;
+  5    begin
+  6    x:=&number1;
+  7    y:=&number2;
+  8    z:=&number3;
+  9    if x>y and x>z then
+ 10   dbms_output.put_line('x is largest');
+ 11   end if;
+ 12    if y>x and y>z then
+ 13    dbms_output.put_line('y is largest');
+ 14    end if;
+ 15   if z>x and z>y then
+ 16   dbms_output.put_line('z is largest');
+ 17   end if;
+ 18    end;
+ 19    /
+Enter value for number1: 4
+old   6:   x:=&number1;
+new   6:   x:=4;
+Enter value for number2: 6
+old   7:   y:=&number2;
+new   7:   y:=6;
+Enter value for number3: 2
+old   8:   z:=&number3;
+new   8:   z:=2;
+y is largest
+
+PL/SQL procedure successfully completed.
