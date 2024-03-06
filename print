@@ -1,0 +1,12 @@
+set serveroutput on;
+SQL> begin
+  2     dbms_output.put_line('This is my first PL/SQL Program');
+  3     dbms_output.put_line('PL/SQL is a procedural Language');
+  4     dbms_output.put_line('I like PL/SQL');
+  5    end;
+  6    /
+This is my first PL/SQL Program
+PL/SQL is a procedural Language
+I like PL/SQL
+
+PL/SQL procedure successfully completed.
