@@ -1,0 +1,21 @@
+Enter user-name: SYSTEM
+Enter password:
+Last Successful login time: Wed Mar 06 2024 13:41:16 +05:30
+
+Connected to:
+Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Version 21.3.0.0.0
+
+SQL> set serveroutput on;
+SQL> CREATE OR REPLACE PROCEDURE test1 IS
+  2  BEGIN
+  3  dbms_output.put_line('test sucess');
+  4  END;
+  5  /
+
+Procedure created.
+
+SQL> EXECUTE test1;
+test sucess
+
+PL/SQL procedure successfully completed.
